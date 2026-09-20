@@ -79,13 +79,18 @@ body {
     color: #2F5233;
 }
 
+.status-unavailable {
+    background: #F3E1DD;
+    color: #cf1b1b;
+}
+
 .status-issued {
     background: #F3E1DD;
     color: #A23E3E;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
