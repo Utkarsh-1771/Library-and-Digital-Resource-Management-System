@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e3b36;
-    color: #22302d;
+    background-color: #2F5233;
+    color: #2B2118;
 }
 
 .page {
@@ -20,8 +20,11 @@ body {
 
 .intro {
     width: 50%;
-    padding: 0 15px;
+    padding: 0 60px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro h1 {
@@ -34,7 +37,7 @@ body {
 .intro p {
     font-size: 20px;
     line-height: 1.6;
-    color: #c9d6d1;
+    color: #D9E5D3;
     max-width: 500px;
 }
 
@@ -54,10 +57,10 @@ body {
 
 .card {
     width: 500px;
-    background-color: #faf8f2;
+    background-color: #F7F3EA;
     padding: 45px 40px;
     border-radius: 7px;
-    border-left: 3px solid #c4463a;
+    border-left: 3px solid #A23E3E;
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -69,7 +72,7 @@ body {
 }
 
 .sub {
-    color: #5f6f6b;
+    color: #6B5F52;
     font-size: 18px;
     margin-bottom: 35px;
 }
@@ -97,7 +100,7 @@ select {
     font-size: 18px;
 
     border: none;
-    border-bottom: 2px solid #b9c3bf;
+    border-bottom: 2px solid #E6DCC8;
 
     background-color: transparent;
 }
@@ -132,7 +135,7 @@ select:focus {
 }
 
 a {
-    color: #c4463a;
+    color: #A23E3E;
 }
 
 
@@ -141,23 +144,18 @@ a {
 button {
     width: 100%;
     padding: 15px;
-
-    background-color: #b8862f;
+    background-color: #B8862E;
     color: white;
-
     border: none;
     border-radius: 5px;
-
     font-size: 18px;
     font-weight: bold;
-
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #9d7226;
+    background-color: #9C7126;
 }
-
 
 /* BOTTOM TEXT */
 
@@ -165,7 +163,7 @@ button:hover {
     text-align: center;
     margin-top: 28px;
     font-size: 16px;
-    color: #5f6f6b;
+    color: #6B5F52;
 }
 
 
