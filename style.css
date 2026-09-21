@@ -136,6 +136,7 @@ select:focus {
 
 a {
     color: #A23E3E;
+    text-decoration: none;
 }
 
 
@@ -151,6 +152,7 @@ button {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
