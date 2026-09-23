@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   min-height: 100vh;
-  background-color: #eaf3ea;
+  background-color: #F7F3EA;
   font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
-  color: #1f3d2b;
+  color: #2B2118;
   padding: 60px 20px;
 }
 
@@ -19,22 +20,22 @@ body {
 
 h1 {
   font-size: 2.6rem;
-  color: #1f5c37;
+  color: #2F5233;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  color: #4c6b57;
+  color: #6B5F52;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
 
 .card {
-  background-color: #f4faf4;
+  background-color: #FFFFFF;
   border-radius: 12px;
   padding: 40px;
   text-align: left;
-  box-shadow: 0 2px 10px rgba(31, 92, 55, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
 .field {
@@ -48,7 +49,7 @@ h1 {
 label {
   display: block;
   font-weight: bold;
-  color: #1f5c37;
+  color: #2F5233;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
@@ -57,15 +58,15 @@ input[type="text"],
 input[type="number"] {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid #cfe3d2;
+  border: 1px solid #E6DCC8;
   border-radius: 8px;
-  background-color: #f0f8f0;
+  background-color: #FBF9F5;
   font-size: 1rem;
-  color: #35513f;
+  color: #2B2118;
 }
 
 input::placeholder {
-  color: #8fa696;
+  color: #A79C8D;
 }
 
 .date-field {
@@ -81,7 +82,7 @@ input::placeholder {
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: #4c6b57;
+  color: #6B5F52;
   pointer-events: none;
 }
 
@@ -101,28 +102,28 @@ button {
 }
 
 .btn-primary {
-  background-color: #1f5c37;
+  background-color: #B8862E;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #184a2c;
+  background-color: #9C7126;
 }
 
 .btn-secondary {
-  background-color: #e2ece2;
-  color: #35513f;
+  background-color: #E4EFE0;
+  color: #2F5233;
 }
 
 .btn-secondary:hover {
-  background-color: #d3e2d3;
+  background-color: #D3E2D3;
 }
 
 .back-link {
   display: block;
   text-align: center;
   margin-top: 30px;
-  color: #1f5c37;
+  color: #A23E3E;
   text-decoration: none;
   font-weight: bold;
 }
