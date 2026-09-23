@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Fine Calculator</title>
+<link rel="stylesheet" href="fine.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Library Fine Calculator</h1>
+    <p class="subtitle">Calculate fines for books returned after the submission date.</p>
+
+    <div class="card">
+      <div class="field">
+        <label for="book-title">Book Title</label>
+        <input type="text" id="book-title" placeholder="Enter book title">
+      </div>
+
+      <div class="field">
+        <label for="due-date">Due Date</label>
+        <div class="date-field">
+          <input type="text" id="due-date" placeholder="dd - mm - yyyy">
+          <span class="icon">&#128197;</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="return-date">Return Date</label>
+        <div class="date-field">
+          <input type="text" id="return-date" placeholder="dd - mm - yyyy">
+          <span class="icon">&#128197;</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="fine-per-day">Fine per day (₹)</label>
+        <input type="number" id="fine-per-day" value="5">
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn-primary">Calculate Fine</button>
+        <button type="button" class="btn-secondary">Reset</button>
+      </div>
+    </div>
+
+    <a href="#" class="back-link">Back to Login</a>
+  </div>
+</body>
+</html>
