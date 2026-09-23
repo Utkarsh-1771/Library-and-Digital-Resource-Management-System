@@ -1,46 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Add New Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
     <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
 
-    <div class="box">
+    <main>
 
-        <h2>Add New Book</h2>
-        <p>Enter the details of the new book</p>
+        <!-- Add New Book -->
 
-        <div class="form">
+        <div class="box add-book">
 
-            <div>
-                <label>Book ID</label>
-                <input type="text" placeholder="Enter book ID">
+            <h2>Add New Book</h2>
+            <p>Enter the details of the new book</p>
+
+            <div class="form">
+
+                <div>
+                    <label>Book ID</label>
+                    <input type="text" placeholder="Enter book ID">
+                </div>
+
+                <div>
+                    <label>Book Name</label>
+                    <input type="text" placeholder="Enter book name">
+                </div>
+
+                <div>
+                    <label>Author</label>
+                    <input type="text" placeholder="Enter author name">
+                </div>
+
+                <div>
+                    <label>Quantity</label>
+                    <input type="number" placeholder="Enter quantity">
+                </div>
+
             </div>
 
-            <div>
-                <label>Book Name</label>
-                <input type="text" placeholder="Enter book name">
+            <button>Add Book</button>
+
+        </div>
+
+
+        <!-- Issue and Return -->
+
+        <div class="bottom-section">
+
+            <!-- Issue Book -->
+
+            <div class="box">
+
+                <h2>Issue Book</h2>
+                <p>Enter student and book details</p>
+
+                <div class="form">
+
+                    <div>
+                        <label>Student Name</label>
+                        <input type="text" placeholder="Enter student name">
+                    </div>
+
+                    <div>
+                        <label>Student ID</label>
+                        <input type="text" placeholder="Enter student ID">
+                    </div>
+
+                    <div>
+                        <label>Book ID</label>
+                        <input type="text" placeholder="Enter book ID">
+                    </div>
+
+                    <div>
+                        <label>Issue Date</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+                <button>Issue Book</button>
+
             </div>
 
-            <div>
-                <label>Author</label>
-                <input type="text" placeholder="Enter author name">
-            </div>
 
-            <div>
-                <label>Quantity</label>
-                <input type="number" placeholder="Enter quantity">
+            <!-- Return Book -->
+
+            <div class="box">
+
+                <h2>Return Book</h2>
+                <p>Enter book return details</p>
+
+                <div class="form">
+
+                    <div>
+                        <label>Student ID</label>
+                        <input type="text" placeholder="Enter student ID">
+                    </div>
+
+                    <div>
+                        <label>Book ID</label>
+                        <input type="text" placeholder="Enter book ID">
+                    </div>
+
+                    <div>
+                        <label>Return Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Fine</label>
+                        <input type="number" placeholder="Enter fine amount">
+                    </div>
+
+                </div>
+
+                <button>Return Book</button>
+
             </div>
 
         </div>
 
-        <button>Add Book</button>
-
-    </div>
+    </main>
 
 </body>
 </html>

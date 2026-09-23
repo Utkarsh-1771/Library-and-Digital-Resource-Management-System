@@ -37,7 +37,6 @@ main {
 }
 
 
-/* Form */
 
 .form {
     display: grid;
@@ -70,8 +69,6 @@ input:focus {
 }
 
 
-/* Button */
-
 button {
     width: 50%;
     height: 42px;
@@ -89,7 +86,6 @@ button:hover {
 }
 
 
-/* Issue + Return */
 
 .bottom-section {
     display: grid;
@@ -106,7 +102,6 @@ button:hover {
 }
 
 
-/* Mobile */
 
 @media (max-width: 800px) {
 
