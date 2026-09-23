@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+main {
+    width: 86%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 26px;
+    margin-bottom: 25px;
+}
+
+.box h2 {
+    color: #1f426d;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.box > p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* Form */
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 16px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input {
+    height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1f426d;
+}
+
+
+/* Button */
+
+button {
+    width: 50%;
+    height: 42px;
+    margin-top: 20px;
+    background-color: #1f426d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #173555;
+}
+
+
+/* Issue + Return */
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.bottom-section .box {
+    margin-bottom: 0;
+}
+
+.bottom-section button {
+    width: 50%;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
