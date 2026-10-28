@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F7F3EA;
+    color: #2B2118;
+}
+
+main {
+    width: 86%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #E6DCC8;
+    border-radius: 10px;
+    padding: 26px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.box h2 {
+    color: #2F5233;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.box>p {
+    color: #6B5F52;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 16px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input {
+    height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #E6DCC8;                      
+    border-radius: 8px;                            
+    background-color: #FBF9F5;                      
+    font-family: inherit;                           
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #B8862E;                         
+}
+
+
+button {
+    width: 50%;
+    height: 42px;
+    margin-top: 20px;
+    background-color: #B8862E;                      
+    color: white;
+    border: none;
+    border-radius: 8px;                             
+    font-family: inherit;                           
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9C7126;                      
+}
+
+
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.bottom-section .box {
+    margin-bottom: 0;
+}
+
+.bottom-section button {
+    width: 50%;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.nav-bar {
+    background: #2F5233;
+    height: 70px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
