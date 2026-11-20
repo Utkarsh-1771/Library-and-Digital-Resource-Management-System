@@ -190,3 +190,42 @@ button:hover {
         width: 100%;
     }
 }
+
+.manage-books {
+    margin-top: 25px;
+}
+
+#book-list {
+    list-style: none;
+}
+
+#book-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #E6DCC8;
+}
+
+#book-list li:last-child {
+    border-bottom: none;
+}
+
+.book-info span {
+    color: #6B5F52;
+    font-size: 14px;
+}
+
+.delete-btn {
+    width: auto;
+    height: 34px;
+    margin-top: 0;
+    padding: 0 14px;
+    background-color: #F3E1DD;
+    color: #A23E3E;
+}
+
+.delete-btn:hover {
+    background-color: #A23E3E;
+    color: white;
+}
