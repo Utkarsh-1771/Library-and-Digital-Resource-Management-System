@@ -32,3 +32,19 @@ function updateStats() {
     document.querySelector("#issued-count").textContent = issued;
 }
 updateStats();
+const statuses = document.querySelectorAll(".card-status");
+
+statuses.forEach(function (status) {
+    status.addEventListener("click", function () {
+        if (status.classList.contains("status-available")) {
+            status.classList.remove("status-available");
+            status.classList.add("status-issued");
+            status.textContent = "Issued";
+        } else if (status.classList.contains("status-issued")) {
+            status.classList.remove("status-issued");
+            status.classList.add("status-available");
+            status.textContent = "Available";
+        }
+        updateStats();
+    });
+});
