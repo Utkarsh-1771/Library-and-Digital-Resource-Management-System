@@ -171,3 +171,48 @@ header a {
     width: 100%;
     object-fit: cover;
 }
+
+.no-results {
+    text-align: center;
+    color: #6B5F52;
+    margin-top: 40px;
+}
+
+.stats {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.stat {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #E6DCC8;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2F5233;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6B5F52;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+    }
+}
+
+.status-available,
+.status-issued {
+    cursor: pointer;
+}

@@ -28,6 +28,20 @@
         <h1 class="hero-title">Find Your Next Read</h1>
         <p class="hero-subtitle">Browse the full catalogue, check what's available, and see what's currently issued.</p>
     </section>
+    <section class="stats">
+        <div class="stat">
+            <p class="stat-number" id="total-count">0</p>
+            <p class="stat-label">Total books</p>
+        </div>
+        <div class="stat">
+            <p class="stat-number" id="available-count">0</p>
+            <p class="stat-label">Available</p>
+        </div>
+        <div class="stat">
+            <p class="stat-number" id="issued-count">0</p>
+            <p class="stat-label">Issued</p>
+        </div>
+    </section>
     <main>
         <div class="toolbar">
             <input type="text" class="search-input" placeholder="Search by title or author…">
@@ -36,6 +50,7 @@
                 <option value="fiction">Fiction</option>
                 <option value="science">Science</option>
                 <option value="history">History</option>
+                <option value="non-fiction">Non-Fiction</option>
             </select>
         </div>
         <div class="container">
@@ -76,11 +91,12 @@
                 <span class="card-status status-available">Available</span>
             </div>
         </div>
+        <p class="no-results" hidden>No books found. Try a different search or category.</p>
     </main>
     <footer class="site-footer">
         <p>Shelf Life — a small library catalogue.</p>
     </footer>
-
+    <script src="home_script.js"></script>
     <script src="logout.js"></script>
 </body>
 
