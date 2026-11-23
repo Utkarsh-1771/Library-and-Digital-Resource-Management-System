@@ -36,6 +36,9 @@ const statuses = document.querySelectorAll(".card-status");
 
 statuses.forEach(function (status) {
     status.addEventListener("click", function () {
+        if (!document.body.classList.contains("is-librarian")) {
+            return;
+        }
         if (status.classList.contains("status-available")) {
             status.classList.remove("status-available");
             status.classList.add("status-issued");
@@ -57,6 +60,9 @@ async function loadUser() {
         return;
     }
     const data = await response.json();
+    if (data.user.role === "Librarian") {
+        document.body.classList.add("is-librarian");
+    }
     document.querySelector("#profile-email").textContent = data.user.email;
     document.querySelector("#profile-role").textContent = "Role: " + data.user.role;
 }
