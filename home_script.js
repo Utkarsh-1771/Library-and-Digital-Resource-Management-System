@@ -70,3 +70,19 @@ loadUser();
 avatar.addEventListener("click", function () {
     profileMenu.hidden = !profileMenu.hidden;
 });
+const modal = document.querySelector("#book-modal");
+cards.forEach(function (card) {
+    card.addEventListener("click", function (event) {
+        if (event.target.closest(".card-status")) {
+            return;
+        }
+        document.querySelector("#modal-category").textContent = card.querySelector(".card-category").textContent;
+        document.querySelector("#modal-title").textContent = card.querySelector(".card-title").textContent;
+        document.querySelector("#modal-author").textContent = card.querySelector(".card-author").textContent;
+        document.querySelector("#modal-status").textContent = "Status: " + card.querySelector(".card-status").textContent;
+        modal.hidden = false;
+    });
+});
+document.querySelector("#modal-close").addEventListener("click", function () {
+    modal.hidden = true;
+});
