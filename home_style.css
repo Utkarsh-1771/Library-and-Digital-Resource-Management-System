@@ -216,3 +216,52 @@ header a {
 .status-issued {
     cursor: pointer;
 }
+
+.profile {
+    position: relative;
+}
+
+.avatar {
+    cursor: pointer;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    background: #FFFFFF;
+    border: 1px solid #E6DCC8;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+.profile-label {
+    font-size: 0.75rem;
+    color: #6B5F52;
+}
+
+.profile-email {
+    font-weight: bold;
+    color: #2F5233;
+    word-break: break-all;
+}
+
+.profile-role {
+    font-size: 0.9rem;
+    color: #6B5F52;
+}
+
+.profile-menu button {
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    background: #F3E1DD;
+    color: #A23E3E;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    cursor: pointer;
+}

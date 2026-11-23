@@ -10,6 +10,7 @@ logoutBtn.addEventListener("click", async function (e) {
     const data = await response.json();
 
     if (response.ok) {
+        localStorage.removeItem("user");
         alert(data.message);
         window.location.href = "index.html";
     }
