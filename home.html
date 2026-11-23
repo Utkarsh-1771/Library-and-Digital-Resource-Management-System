@@ -16,7 +16,6 @@
                 <a href="index.html">Login</a>
                 <a href="project.html">Booking</a>
                 <a href="contact.html">Contact Us</a>
-                <a href="#" id="logoutBtn">Logout</a>
                 <div class="profile">
                     <div class="avatar" id="avatar">
                         <img src="assets/images/blobz-library-and-digital-resource-management-sy.png"
@@ -104,6 +103,15 @@
     <footer class="site-footer">
         <p>Shelf Life — a small library catalogue.</p>
     </footer>
+    <div class="modal" id="book-modal" hidden>
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <span class="modal-category" id="modal-category"></span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-author"></p>
+            <p id="modal-status"></p>
+        </div>
+    </div>
     <script src="home_script.js"></script>
     <script src="logout.js"></script>
 </body>
