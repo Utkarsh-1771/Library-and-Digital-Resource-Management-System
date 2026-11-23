@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +17,17 @@
                 <a href="project.html">Booking</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="#" id="logoutBtn">Logout</a>
-                <div class="avatar">
-                    <img src="assets/images/blobz-library-and-digital-resource-management-sy.png" alt="User profile">
+                <div class="profile">
+                    <div class="avatar" id="avatar">
+                        <img src="assets/images/blobz-library-and-digital-resource-management-sy.png"
+                            alt="User profile">
+                    </div>
+                    <div class="profile-menu" id="profile-menu" hidden>
+                        <p class="profile-label">Signed in as</p>
+                        <p class="profile-email" id="profile-email"></p>
+                        <p class="profile-role" id="profile-role"></p>
+                        <button id="logoutBtn">Log out</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,4 +109,3 @@
 </body>
 
 </html>
-```

@@ -48,3 +48,19 @@ statuses.forEach(function (status) {
         updateStats();
     });
 });
+const avatar = document.querySelector("#avatar");
+const profileMenu = document.querySelector("#profile-menu");
+async function loadUser() {
+    const response = await fetch("/api/session");
+    if (!response.ok) {
+        document.querySelector("#profile-email").textContent = "Not logged in";
+        return;
+    }
+    const data = await response.json();
+    document.querySelector("#profile-email").textContent = data.user.email;
+    document.querySelector("#profile-role").textContent = "Role: " + data.user.role;
+}
+loadUser();
+avatar.addEventListener("click", function () {
+    profileMenu.hidden = !profileMenu.hidden;
+});
