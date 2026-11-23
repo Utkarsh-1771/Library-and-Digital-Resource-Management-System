@@ -73,7 +73,6 @@ loginForm.addEventListener("submit", async function (e) {
             passwordInput.value = "";
         } else {
             message.textContent = "Login successful!";
-            localStorage.setItem("user", JSON.stringify({ email, role }));
             window.location.href = "home.html";
         }
 

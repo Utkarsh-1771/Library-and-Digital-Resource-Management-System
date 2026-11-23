@@ -50,15 +50,17 @@ statuses.forEach(function (status) {
 });
 const avatar = document.querySelector("#avatar");
 const profileMenu = document.querySelector("#profile-menu");
-const user = JSON.parse(localStorage.getItem("user"));
-
-if (user) {
-    document.querySelector("#profile-email").textContent = user.email;
-    document.querySelector("#profile-role").textContent = "Role: " + user.role;
-} else {
-    document.querySelector("#profile-email").textContent = "Not logged in";
+async function loadUser() {
+    const response = await fetch("/api/session");
+    if (!response.ok) {
+        document.querySelector("#profile-email").textContent = "Not logged in";
+        return;
+    }
+    const data = await response.json();
+    document.querySelector("#profile-email").textContent = data.user.email;
+    document.querySelector("#profile-role").textContent = "Role: " + data.user.role;
 }
-
+loadUser();
 avatar.addEventListener("click", function () {
     profileMenu.hidden = !profileMenu.hidden;
 });
