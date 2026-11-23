@@ -80,6 +80,7 @@ cards.forEach(function (card) {
         document.querySelector("#modal-title").textContent = card.querySelector(".card-title").textContent;
         document.querySelector("#modal-author").textContent = card.querySelector(".card-author").textContent;
         document.querySelector("#modal-status").textContent = "Status: " + card.querySelector(".card-status").textContent;
+        document.querySelector("#modal-description").textContent = card.dataset.description || "No description available.";
         modal.hidden = false;
     });
 });

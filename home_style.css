@@ -341,7 +341,7 @@ header a {
     background: #FFFFFF;
     border: 1px solid #E6DCC8;
     border-radius: 10px;
-    padding: 2rem 1.5rem;
+    overflow: hidden;
 }
 
 .modal-box h2 {
@@ -371,6 +371,22 @@ header a {
     font-size: 1.6rem;
     color: #6B5F52;
     cursor: pointer;
+}
+
+.modal-top {
+    background: #F1EADA;
+    padding: 2rem 1.5rem 1.25rem;
+}
+
+.modal-body {
+    padding: 1.25rem 1.5rem 1.75rem;
+}
+
+.modal-description {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    line-height: 1.6;
 }
 
 .card {
