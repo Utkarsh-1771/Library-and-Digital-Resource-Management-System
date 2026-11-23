@@ -5,14 +5,36 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     background-color: #F7F3EA;
     color: #2B2118;
+}
+
+input,
+select,
+button {
+    font-family: inherit;
+}
+
+h1,
+h2,
+.nav-text,
+.stat-number {
+    font-family: 'Lora', serif;
+    font-weight: 600;
 }
 
 .nav-bar {
     background: #2F5233;
     height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 .nav-content {
@@ -40,12 +62,10 @@ header a {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
 }
 
 .card {
-    width: 220px;
     padding: 1.25rem;
     background: #FFFFFF;
     border: 1px solid #E6DCC8;
@@ -54,11 +74,13 @@ header a {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(95%);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card-category {
@@ -134,20 +156,44 @@ header a {
     font-size: 1rem;
 }
 
+.search-input,
+.category-select {
+    font-family: inherit;
+    background: #FFFFFF;
+}
+
+.search-input:focus,
+.category-select:focus {
+    outline: none;
+    border-color: #B8862E;
+    box-shadow: 0 0 0 3px rgba(184, 134, 46, 0.15);
+}
+
+.stat {
+    border-top: 3px solid #B8862E;
+}
+
+.site-footer {
+    border-top: 1px solid #E6DCC8;
+    margin-top: 4rem;
+}
+
 .hero {
     text-align: center;
-    padding: 3rem 1rem 2rem;
+    padding: 4rem 1rem 3rem;
+    background: linear-gradient(#EAE2CE, #F7F3EA);
 }
 
 .hero-title {
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: #2F5233;
-    margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
+    font-size: 1.1rem;
     color: #6B5F52;
-    font-size: 1rem;
+    max-width: 560px;
+    margin: 0 auto;
 }
 
 .site-footer {
@@ -179,7 +225,7 @@ header a {
 }
 
 .stats {
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
