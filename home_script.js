@@ -1,4 +1,33 @@
-console.log("home.js loaded");
+function addSavedBooks() {
+    const saved = JSON.parse(localStorage.getItem("books")) || [];
+    const container = document.querySelector(".container");
+
+    saved.forEach(function (book) {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.dataset.description = book.description;
+
+        const category = document.createElement("span");
+        category.className = "card-category";
+        category.textContent = book.category;
+
+        const title = document.createElement("h2");
+        title.className = "card-title";
+        title.textContent = book.title;
+
+        const author = document.createElement("p");
+        author.className = "card-author";
+        author.textContent = "by " + book.author;
+
+        const status = document.createElement("span");
+        status.className = "card-status " + (book.status === "Issued" ? "status-issued" : "status-available");
+        status.textContent = book.status;
+
+        card.append(category, title, author, status);
+        container.append(card);
+    });
+}
+addSavedBooks();
 const search = document.querySelector(".search-input");
 const cards = document.querySelectorAll(".card");
 const categorySelect = document.querySelector(".category-select");
